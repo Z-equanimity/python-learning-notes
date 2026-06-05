@@ -17,6 +17,23 @@ class Restaurant():
             self.number_served += newing 
         else:
             print("今天生意不太行啊，下去沉淀")
+# class IceCreamStand(Restaurant):
+#     """表示冰淇淋种类的点，继承Restaurant"""
+#     def __init__(self,name,type):
+#         super.__init__(name,type)
+#         self.flavors = []
+#     def add_type(self):
+#         self.flavors
+                 
+
+
+
+
+
+
+
+
+
 name1_restaurant = Restaurant("江南","shuang")
 name1_restaurant.describe_restaurant()
 name1_restaurant.update_number_served(3)
@@ -51,3 +68,4 @@ user.increment_login_attempts(1)
 user.read_login_attempts()
 user.reset_login_attempts()
 user.read_login_attempts()
+

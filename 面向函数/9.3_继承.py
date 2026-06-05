@@ -17,7 +17,7 @@ class Car:
         if milage >= self.odometer_reading:
             self.odometer_reading = milage
         else:
-            pring("不可恢复出厂设置")
+            print("不可恢复出厂设置")
     def increment_odometer(self,mils):
         """将里程表增加到给定的量"""
         self.odometer_reading += mils
