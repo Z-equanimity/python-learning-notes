@@ -22,12 +22,14 @@ class Car():
     def increment_odometer(self,miles):
         """增加特定的里程"""
         self.odometer_reading += miles
+        
 class ElectricCar(Car):
     """在父类Car中添加子类ElectricCar的独特之处"""
     def __init__(self,make,model,year):
         """先初始化父类的属性，在初始化电动汽车的特有的属性"""
         super().__init__(make,model,year)
         self.battery = Battery()
+
 class Battery:
     def __init__(self,battery_size= 40):
         """初始化电池的属性"""
