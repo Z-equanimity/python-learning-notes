@@ -24,7 +24,8 @@ class Dog:   # 在python中，首字母大写的名称代指的是类
         代码含义：将传入的name参数的值赋给实例的属性self.name
         """
     def sit(self):
-            print(f"{self.name}is now sitting")
+            # self 指的就是当前对象本身
+            print(f"{self.name}is now sitting")   # self.name 就是在sit方法中获取属性name
     def roll_over(self):
              print(f"{self.name} rolled over")
 """创建实例"""
@@ -39,3 +40,26 @@ print(f"your dog's name is {your_dog.name}")
 print(f"your dog is {your_dog.age} years old")
 your_dog.sit()
 your_dog.roll_over()
+
+"""
+类的总结：
+1、类由两部分组成
+①类的属性：本质是变量
+②类的行为：本质是函数、方法
+
+
+2、语法
+①创建类
+class 类名():
+    属性
+
+    方法
+
+创建对象，实例化类
+对象名 = 类型()
+
+3、self的作用
+只有通过self方法才能去访问类的属性
+self出现在形参中，不占用参数位置，传参过程中可以当作不存在
+self指的就是当前对象的地址
+"""
