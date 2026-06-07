@@ -1,10 +1,16 @@
-"""导入模块方式"""
+"""导入模块"""
 # import modul_name
 import pizza
-"""python运行这行代码会让python打开pizza.朋友，并将其中所有的函数都复制到这个程序当中"""
+"""python运行这行代码会让python打开pizza.py，并将其中所有的函数都复制到这个程序当中"""
 pizza.make_pizza(16,"qwer")
 pizza.make_pizza(12,"aa","ss","dd")
-"""要调用被导入模块中的函数，可指定被导入被导入模块的名称pizza和函数名make_pizza()，并用句点隔开"""
+"""要调用被导入模块中的函数，可指定被导入被导入模块的名称（文件名）pizza和函数名make_pizza()，并用句点隔开"""
+
+import time
+print("你好")
+time.sleep(3)   #  当前的程序睡眠三秒钟
+print("你好")
+
 
 """导入模块中特定的函数"""
 # from modul_name import function_name
@@ -28,7 +34,7 @@ p.make_pizza(16,"qwer")
 p.make_pizza(12,"aa","ss","dd")
 
 """导入模块中所有的函数"""
-# form modul_name import *
+# form modul_name import *   #不推荐使用这种导入方式
 from pizza import *
 make_pizza(16,"qwer")
 make_pizza(12,"aa","ss","dd")
