@@ -1,29 +1,31 @@
-# import pizza
-# """python运行这行代码会让python打开pizza.朋友，并将其中所有的函数都复制到这个程序当中"""
-# pizza.make_pizza(16,"qwer")
-# pizza.make_pizza(12,"aa","ss","dd")
-# """要调用被导入模块中的函数，可指定被导入被导入模块的名称pizza和函数名make_pizza()，并用句点隔开"""
+"""导入模块方式"""
+# import modul_name
+import pizza
+"""python运行这行代码会让python打开pizza.朋友，并将其中所有的函数都复制到这个程序当中"""
+pizza.make_pizza(16,"qwer")
+pizza.make_pizza(12,"aa","ss","dd")
+"""要调用被导入模块中的函数，可指定被导入被导入模块的名称pizza和函数名make_pizza()，并用句点隔开"""
 
-# """导入模块中特定的函数"""
-# # from modul_name import function_name
-# # form modul_name import function_0,import function_1,import function_2
-# """依据第二行可以从模块中任意数量的函数"""
-# from pizza import make_pizza
-# make_pizza(16,"qwer")
-# make_pizza(12,"aa","ss","dd")
+"""导入模块中特定的函数"""
+# from modul_name import function_name
+# form modul_name import function_0,import function_1,import function_2
+"""依据第二行可以从模块中任意数量的函数"""
+from pizza import make_pizza
+make_pizza(16,"qwer")
+make_pizza(12,"aa","ss","dd")
 
-# """使用as给函数指定别名"""
-# # # from modul_name import function_name as fn
-# from pizza import make_pizza as mp
-# """给定之后，每当需要调用make_pizza()时，都可将其简写为mp()"""
-# mp(16,"qwer")
-# mp(12,"aa","ss","dd")
+"""使用as给函数指定别名"""
+# # from modul_name import function_name as fn
+from pizza import make_pizza as mp
+"""给定之后，每当需要调用make_pizza()时，都可将其简写为mp()"""
+mp(16,"qwer")
+mp(12,"aa","ss","dd")
 
-# """使用as给模块指定别名"""
-# # from modul_name as mn
-# import pizza as p
-# p.make_pizza(16,"qwer")
-# p.make_pizza(12,"aa","ss","dd")
+"""使用as给模块指定别名"""
+# from modul_name as mn
+import pizza as p
+p.make_pizza(16,"qwer")
+p.make_pizza(12,"aa","ss","dd")
 
 """导入模块中所有的函数"""
 # form modul_name import *
